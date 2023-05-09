@@ -1,4 +1,4 @@
-let n = Math.floor(Math.random() * 100) + 2;
+const n = Math.floor(Math.random() * 100) + 2;
 
 let squareNum;
 const dollarPrice = 27;
