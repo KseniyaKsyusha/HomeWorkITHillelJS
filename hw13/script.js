@@ -4,17 +4,6 @@ const valuePassword = document.querySelector(".password").value;
 const passwordInput = document.getElementById("passwordId").value;
 const emailInput = document.getElementById("loginId").value;
 
-
-// document.getElementById("myButton").onclick = function () {
-//   myFunctionTimeout();
-// };
-
-// function myFunctionTimeout() {
-//   const myTimeout = setTimeout(myFunction, 5000);
-//   document.getElementById("buttonId").onClick = document.location =
-//     "index.html";
-// }
-
 let myButton = document.getElementById("myButton");
 
 myButton.addEventListener("click", function () {
