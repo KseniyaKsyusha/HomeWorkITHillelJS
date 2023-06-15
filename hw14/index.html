@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Lesson</title>
+</head>
+
+<body>
+    <button id="myButton" class="button">Buy</button>
+    <div id="buy">
+        <div class="wrapper">
+            <div class="container">
+                <form name="someForm" action="" method="" class="form">
+                    <p><label>Name <input name="name" type="text"><span></span></label></p>
+                    <p><label>Fathers Name <input name="fatherName" type="text"><span></span></label></p>
+                    <p><label>Surname <input name="surname" type="text"><span></span></label></p>
+                    <p>City:
+                        <select name="city" id="">
+                            <option value="Zaporozhye">Zaporozhye</option>
+                            <option value="Kharkiv">Kharkiv</option>
+                            <option value="Odessa">Odessa</option>
+                            <option value="Lviv">Lviv</option>
+                        </select>
+                        <span></span>
+                    </p>
+                    <p>Departament 'Nowa pochta':
+                        <select name="warehouse" id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <span></span>
+                    </p>
+                    <p>How do you want to pay?<br>
+                        <label><input type="radio" name="payMetod" checked value="card">card</label>
+                        <label><input type="radio" name="payMetod" value="on_delivery">cash on delivery</label>
+                        <span></span>
+                    </p>
+                    <p>Amount:<br>
+                        <input type="number" name="quantity" min="1" value="1"><span></span>
+                    </p>
+                    <p>Comment: <br>
+                        <textarea name="comment" id="" cols="30" rows="5" placeholder="your comment"></textarea>
+                        <span></span>
+                    </p>
+                    <input type="button" value="Buy it" class="goButton" />
+                </form>
+
+                <div class="order-info">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
