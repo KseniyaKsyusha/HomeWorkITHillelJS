@@ -1,5 +1,5 @@
 "use strict";
-debugger;
+
 const button = document.querySelector("button");
 const form = document.querySelector("#buy");
 
@@ -58,7 +58,7 @@ document.querySelector(".goButton").addEventListener("click", function () {
     checkQuantity &&
     checkUserComment
   ) {
-    debugger;
+    
     const orderForm = document.querySelector(".form");
     orderForm.hidden = true;
     const orderInfo = document.querySelector(".order-info");
@@ -75,7 +75,7 @@ document.querySelector(".goButton").addEventListener("click", function () {
 });
 
 function validUserData(name, paragraf) {
-  debugger;
+  
   if (isFinite(name) || name == "") {
     paragraf.nextElementSibling.textContent = "Enter the correct data";
     return false;
@@ -86,7 +86,7 @@ function validUserData(name, paragraf) {
 }
 
 function validUserCityAndWarehouse(value, paragraf) {
-  debugger;
+  
   if (value == "") {
     paragraf.nextElementSibling.textContent = "Enter the correct data";
     return false;
@@ -97,7 +97,7 @@ function validUserCityAndWarehouse(value, paragraf) {
 }
 
 function validQuantity(num) {
-  debugger;
+  
   if (num.value < 1) {
     num.nextElementSibling.textContent = "Enter the correct data";
     return false;
@@ -108,7 +108,7 @@ function validQuantity(num) {
 }
 
 function validUserComment(sring) {
-  debugger;
+  
   if (sring == "") {
     document.forms.someForm.elements[8].nextElementSibling.textContent =
       "comment please!";
@@ -120,7 +120,7 @@ function validUserComment(sring) {
 }
 
 function validPayMethod(payMethod) {
-  debugger;
+  
   for (let method of payMethod) {
     if (method.checked) {
       return method.value;
@@ -129,7 +129,7 @@ function validPayMethod(payMethod) {
 }
 
 function findValuePayMethod(finalPayMethod) {
-  debugger;
+ 
   const objPayMethod = {
     card: "card",
     on_delivery: "cash on delivery",
@@ -142,7 +142,7 @@ function findValuePayMethod(finalPayMethod) {
 }
 
 function checkPayMethod(method) {
-  debugger;
+ 
   if (method == undefined) {
     document.forms.someForm.children[5].children[3].textContent =
       "Choise the payment method!";
