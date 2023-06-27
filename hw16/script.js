@@ -8,7 +8,7 @@ class Human {
 }
 
 class Apartment {
-  let residents = [];
+  residents = [];
   addResident(human) {
     if (human instanceof Human){
       this.residents.push(human);
@@ -19,14 +19,14 @@ class Apartment {
 }
 
 class House {
-  let apartments = [];
+  apartments = [];
   constructor(maxOfApartments) {
     this.maxOfApartments = maxOfApartments;
   }
   addApartment(apartment) {
     if (apartment instanceof Apartment) {
       if (this.apartments.length < this.maxOfApartments) {
-        this.apartments.push(apartment);
+       this.apartments.push(apartment);
       } else {
         alert("Це вже не good!");
       }
