@@ -1,5 +1,5 @@
 "use strict";
-//debugger;
+
 const APIkey = "5d066958a60d315387d9492393935c19";
 
 if (navigator.geolocation) {
