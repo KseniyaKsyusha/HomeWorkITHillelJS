@@ -1,0 +1,16 @@
+.headerContainer{
+    width: auto;
+    height: fit-content;
+    padding: 30px;
+    
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+h1 {
+    color: white;
+    margin: auto;
+    width: fit-content;
+    font-size: 60px;
+}
